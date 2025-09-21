@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="app">
+    <h1>Employee App</h1>
+    
+    <!-- Input fields -->
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="number" id="age" placeholder="Enter Age">
+    <input type="number" id="salary" placeholder="Enter Salary">
+    <button onclick="addEmployee()">Add Employee</button>
+    
+    <!-- Display data -->
+    <h2>Employee List</h2>
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- rows will be added here with JS -->
+      </tbody>
+    </table>
+  </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

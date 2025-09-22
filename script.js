@@ -1,31 +1,30 @@
-// Store employees in an array
+
 let employees = [];
 
 function addEmployee() {
-  // Get values
+
   let name = document.getElementById("name").value;
   let age = document.getElementById("age").value;
   let salary = document.getElementById("salary").value;
 
   if (name && age && salary) {
-    // Add to array
+    
     employees.push({ name, age, salary });
 
-    // Update table
     displayEmployees();
 
-    // Clear inputs
+    
     document.getElementById("name").value = "";
     document.getElementById("age").value = "";
     document.getElementById("salary").value = "";
   } else {
-    alert("Please fill all fields!");
+    alert("Please fill all the fields!");
   }
 }
 
 function displayEmployees() {
   let tableBody = document.querySelector("#employeeTable tbody");
-  tableBody.innerHTML = ""; // Clear old rows
+  tableBody.innerHTML = ""; 
 
   employees.forEach(emp => {
     let row = `<tr>

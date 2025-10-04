@@ -18,7 +18,7 @@ function addEmployee() {
     document.getElementById("age").value = "";
     document.getElementById("salary").value = "";
   } else {
-    alert("Please fill all the fields.....!");
+    alert("Please fill all the fields......!");
   }
 }
 
